@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /**
- * Main - Prints five lines of code.
- * Return 0 (Successful)
+ * Main - A function that prints five lines of code.
+ * Return - Always returns 0 (Successful)
  */
 
+/*returns five lines of code. */
 int main(void)
 {
 printf("Size of a char: 1 byte(s)\n");
