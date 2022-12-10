@@ -6,7 +6,6 @@
  * Return - Always returns 0 (Successful)
  */
 
-/*returns five lines of code. */
 int main(void)
 {
 printf("Size of a char: 1 byte(s)\n");
