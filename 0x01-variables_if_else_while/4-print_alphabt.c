@@ -9,7 +9,7 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 		putchar(c);
-	if (c < 'e' || c > 'e' || c < 'q' || c > 'q')
+	if (c != 'e' && c != 'q')
 		putchar(c);
 	return (0);
 }
