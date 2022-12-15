@@ -14,6 +14,7 @@ int main(void)
 		if (i == 0)
 		{
 			printf("%ld", j);
+			printf(", ");
 		}
 		else if (i == 1)
 		{
@@ -28,5 +29,5 @@ int main(void)
 		++i;
 	}
 	printf("\n");
-	return(0);
+	return (0);
 }
