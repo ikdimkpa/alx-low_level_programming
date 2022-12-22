@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - changes lower case to upper case
- * @n: pointer
+ * @str: pointer to string
  *
  * Return: char
  */
@@ -15,7 +15,7 @@ char *string_toupper(char *str)
 	{
 		if (str[index] > 'a' && str[index] <= 'z')
 			str[index] -= 32;
-		i++;
+		index++;
 	}
 
 	return (str);
