@@ -23,7 +23,7 @@ int checks(int i, int l, char *s)
 {
 	if (l > 0)
 	{
-		if (i == l)
+		if (s[i] == s[l])
 			return (checks(i + 1, l - 1, s));
 		else if (s[i] != s[l])
 			return (0);
