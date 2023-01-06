@@ -3,18 +3,18 @@
 /**
  * help - checks if square root of number exists
  * @num: number
- * @sqrt: possible square root
+ * @sqtr: possible square root
  *
  * Return: square root of number or -1 for error
  */
 int help(int num, int sqtr)
 {
-	if (sqrt * sqrt == num)
-		return (sqrt);
-	else if (sqrt * sqrt > num)
+	if (sqtr * sqtr == num)
+		return (sqtr);
+	else if (sqtr * sqtr > num)
 		return (-1);
 	else
-		return (help(num, sqrt + 1));
+		return (help(num, sqtr + 1));
 }
 
 /**
