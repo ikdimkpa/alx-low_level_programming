@@ -11,41 +11,20 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0, i;
+	int x, y, sum;
 
-	if (argc > 1)
+	sum = 0;
+	for (x = 1; x < argc; x++)
 	{
-		for (i = 1; i < argc; i++)
+		for (y = 0; argv[x][y] != '\0'; y++)
 		{
-			int b;
-			char *str;
-
-			str = argv[i];
-			for (b = 0; b != '\0'; b++)
+			if (!isdigit(argv[x][y]))
 			{
-				if (str[b] < 48 || str[b] > 57)
-				{
-					printf("%s\n", "Error");
-					return (1);
-				}
+				printf("%s\n", "Error");
+				return (1);
 			}
 		}
-	}
-	for (i = 1; i < argc; i++)
-	{
-		if (*argv[i] >= 'a' && *argv[i] <= 'z')
-		{
-			printf("%s\n", "Error");
-			break;
-			return (1);
-		}
-		if (*argv[i] >= 'A' && *argv[i] <= 'Z')
-		{
-			printf("%s\n", "Error");
-			break;
-			return (1);
-		}
-		sum += atoi(argv[i]);
+		sum += atoi(argv[x]);
 	}
 	printf("%d\n", sum);
 	return (0);
