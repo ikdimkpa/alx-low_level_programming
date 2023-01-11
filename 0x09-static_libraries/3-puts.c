@@ -1,6 +1,5 @@
 #include "main.h"
 #include "main.h"
-void _puts(char *str);
 #include<stdio.h>
 
 /**
@@ -8,8 +7,13 @@ void _puts(char *str);
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void _puts(char *str)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	while (*str != '\0')
+	{
+		_putchar(*str + 0);
+		++str;
+	}
+	
+	_putchar('\n');
 }
