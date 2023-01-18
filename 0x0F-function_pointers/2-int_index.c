@@ -20,12 +20,13 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (size <= 0)
 			return (-1);
 		i = 0;
-		do {
+		while (i < size)
+		{
 			b = cmp(array[i]);
-			if (b == TRUE)
+			if (b)
 				return (i);
 			i++;
-		} while (i < size);
+		}
 	}
 	return (-1);
 }
