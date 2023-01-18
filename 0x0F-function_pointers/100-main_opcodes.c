@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - print opcodes of a given machine
@@ -25,7 +26,7 @@ int main (int argc, char *argv[])
 	}
 	for (count = 0; count < bytes; count++)
 	{
-		printf("%02hhx\n", ((char *)main + count));
+		printf("%02x\n", *((char *)main + count));
 		if (count < bytes - 1)
 			printf(" ");
 		else
