@@ -1,8 +1,8 @@
 CC=gcc
-SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
-MAME = school
-RM = rm -f
+SRC=main.c school.c
+OBJ=$(SRC:.c=.o)
+MAME=school
+RM=rm -f
 
 all: $(OBJ)
 	$(CC) -o $(NAME) $(OBJ)
