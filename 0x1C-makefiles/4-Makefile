@@ -5,20 +5,15 @@ MAME=school
 RM=rm -f
 CFLAGS=-Wall -Werror -Wextra -pedantic
 
-all: school
-
-$(NAME): $(SRC)
-	$(CC) $(CFLAGS) -c -o main.o main.c
-	$(CC) $(CFLAGS) -c -o school.o school.c
-	$(CC) $(CFLAGS) -o $(NAME) school.o main.o
+all: $(OBJ)
+	$(CC) -o $(NAME) $(OBJ)
 
 clean:
-	-$(RM) *~ .*~ *.out
+	$(RM) *~ $(OBJ)
 
 oclean:
-	-$(RM) $(OBJ)
+	$(RM) $(OBJ)
 
-fclean:
-	-$(RM) *~ .*~ *a.out $(OBJ)
+fclean: clean oclean
 
-re: all
+re: fclean all
