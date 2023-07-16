@@ -2,6 +2,7 @@
 #define SEARCH_ALGOS_H
 
 #include <stddef.h>
+#include <stdio.h>
 /**
  * struct listint_s - singly linked list
  *
